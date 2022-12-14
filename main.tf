@@ -1,7 +1,7 @@
 resource "google_compute_instance" "vm-from-tf"{
   name = "vm-from-tf"
 
-  zone = "europe-west2-a"            #lessons for kings : always provide the specific zone not just region
+  zone = "europe-west2-a"            #lesson for kings : always provide the specific zone not just region
   machine_type = "n2-standard-2"     #Ask uncle Femi : does the vm on gcp stop the start again/reboot if you change machine type?
 
   allow_stopping_for_update = true
